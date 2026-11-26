@@ -3,11 +3,6 @@ def greet(name: str) -> str:
     return f"Hello, {name}!"
 
 
-def whisper(name: str) -> str:
-    """Whisper someone's name."""
-    return f"hello, {name}."
-
-
 def shout(name: str) -> str:
     """Shout a greeting."""
     if name:
