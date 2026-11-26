@@ -4,7 +4,7 @@ def greet(name: str) -> str:
 
 
 def whisper(name: str) -> str:
-    """Whisper a greeting."""
+    """Return a quiet greeting in lowercase."""
     if name:
         return f"hello, {name.lower()}..."
     return "hello..."
