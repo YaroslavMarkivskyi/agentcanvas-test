@@ -19,3 +19,10 @@ def whisper_twice(name: str) -> str:
 def shout(name: str) -> str:
     """Greet someone loudly."""
     return f"HELLO, {name.upper()}!"
+
+
+def cheer(name: str) -> str:
+    """Cheer someone on."""
+    if name:
+        return f"Hooray, {name}!"
+    return "Hooray!"
