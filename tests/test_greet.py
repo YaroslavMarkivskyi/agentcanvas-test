@@ -1,8 +1,16 @@
-from greeter import greet, shout, whisper_twice
+from greeter import cheer, greet, shout, whisper_twice
 
 
 def test_greet() -> None:
     assert greet("Ada") == "Hello, Ada!"
+
+
+def test_cheer() -> None:
+    assert cheer("Ada") == "Hooray, Ada!"
+
+
+def test_cheer_to_nobody() -> None:
+    assert cheer("") == "Hooray!"
 
 
 def test_shout() -> None:
