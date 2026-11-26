@@ -39,3 +39,8 @@ def applaud(name: str) -> str:
     if name:
         return f"Well done, {name}!"
     return "Well done!"
+
+
+def applaud_loudly(name: str) -> str:
+    """Applaud someone loudly."""
+    return applaud(name).upper()

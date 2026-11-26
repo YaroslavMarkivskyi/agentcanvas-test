@@ -1,4 +1,4 @@
-from greeter import applaud, cheer, cheer_twice, greet, shout, whisper_twice
+from greeter import applaud, applaud_loudly, cheer, cheer_twice, greet, shout, whisper_twice
 
 
 def test_greet() -> None:
@@ -35,3 +35,7 @@ def test_applaud() -> None:
 
 def test_applaud_to_nobody() -> None:
     assert applaud("") == "Well done!"
+
+
+def test_applaud_loudly() -> None:
+    assert applaud_loudly("Ada") == "WELL DONE, ADA!"
