@@ -32,3 +32,10 @@ def cheer_twice(name: str) -> str:
     """Cheer someone on twice."""
     greeting = cheer(name)
     return f"{greeting} {greeting}"
+
+
+def applaud(name: str) -> str:
+    """Applaud someone."""
+    if name:
+        return f"Well done, {name}!"
+    return "Well done!"
