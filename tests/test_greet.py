@@ -1,4 +1,4 @@
-from greeter import cheer, greet, shout, whisper_twice
+from greeter import cheer, cheer_twice, greet, shout, whisper_twice
 
 
 def test_greet() -> None:
@@ -11,6 +11,10 @@ def test_cheer() -> None:
 
 def test_cheer_to_nobody() -> None:
     assert cheer("") == "Hooray!"
+
+
+def test_cheer_twice() -> None:
+    assert cheer_twice("Ada") == "Hooray, Ada! Hooray, Ada!"
 
 
 def test_shout() -> None:
